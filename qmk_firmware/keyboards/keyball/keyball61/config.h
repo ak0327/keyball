@@ -21,11 +21,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 // USB Device descriptor parameters
-#define VENDOR_ID           0x5957     // "YW" = Yowkees
-#define PRODUCT_ID          0x0100
-#define DEVICE_VER          0x0001
-#define MANUFACTURER        Yowkees
-#define PRODUCT             Keyball61
+//#define VENDOR_ID           0x5957     // "YW" = Yowkees
+//#define PRODUCT_ID          0x0100
+//#define DEVICE_VER          0x0001
+//#define MANUFACTURER        Yowkees
+//#define PRODUCT             Keyball61
 
 // Key matrix parameters (Keyball61 is duplex matrix)
 #define MATRIX_ROWS         (5 * 2)  // split keyboard
@@ -39,7 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SOFT_SERIAL_PIN         D2
 #define SPLIT_HAND_MATRIX_GRID  F7, D7
 #define SPLIT_USB_DETECT
-#define SPLIT_USB_TIMEOUT       500
+#define SPLIT_USB_TIMEOUT       2000
 
 #define SPLIT_TRANSACTION_IDS_KB KEYBALL_GET_INFO, KEYBALL_GET_MOTION, KEYBALL_SET_CPI
 
@@ -76,5 +76,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // To squeeze firmware size
 #undef LOCKING_SUPPORT_ENABLE
 #undef LOCKING_RESYNC_ENABLE
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
+//#define NO_ACTION_MACRO
+//#define NO_ACTION_FUNCTION
+
+#define POINTING_DEVICE_AUTO_MOUSE_ENABLE
+#define AUTO_MOUSE_DEFAULT_LAYER 4
