@@ -1,11 +1,17 @@
-# Attention
-## Overview
-* This repository is a clone of [Keyball by Yowkees](https://github.com/Yowkees/keyball)
-* Changed `Keyball61` content to support `Auto Mouse Layer`
-* Confirmed with `qmk 0.19.2` on  arm64
+# Overview
+* This repository is a clone of [Keyball by Yowkees](https://github.com/Yowkees/keyball).
+* Changed `Keyball61` content to support `Automatic Mouse Layer`.
+* Confirmed with `qmk 0.19.2` on  arm64.
 
-## Reference
-* https://wonwon-eater.com/keyball44/#outline__8_3
+# Firmware build
+```shell
+# cd to qmk root
+make keyball/keyball61:default_custom
+```
+
+# Reference
+* [qmk keycodes overview](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md)
+* [Keyball61ユーザーがKeyball44も作ってみた](https://wonwon-eater.com/keyball44/)
 
 
 <br><br><br>
