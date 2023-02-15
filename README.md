@@ -1,3 +1,21 @@
+# Attention
+## Overview
+* This repository is a clone of [Keyball by Yowkees](https://github.com/Yowkees/keyball)
+* Changed `Keyball61` content to support `Auto Mouse Layer`
+* Confirmed with `qmk 0.19.2` on  arm64
+
+## Reference
+* https://wonwon-eater.com/keyball44/#outline__8_3
+
+
+<br><br><br>
+
+Original Readme of Keyball see below.
+
+------------------------------------
+
+<br>
+
 # keyball
 
 Keyball is split keyboard has 100% track ball
