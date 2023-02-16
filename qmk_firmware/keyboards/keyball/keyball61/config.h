@@ -81,5 +81,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_DEFAULT_LAYER 4
+#define AUTO_MOUSE_TIME 650
+#define AUTO_MOUSE_DELAY 10
 
 #define TAPPING_TERM 150
+

@@ -47,18 +47,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [3] = LAYOUT_universal(
-   _______  , _______  , _______  , _______  , RSG(KC_4), RSG(KC_5),                                  _______  , _______  , _______  , _______  ,LCTL(KC_DOWN),LCTL(KC_UP),
+   _______  , _______  , _______  , _______  , LSG(KC_4), LSG(KC_5),                                  _______  , _______  , _______  , _______  ,LCTL(KC_DOWN),LCTL(KC_UP),
    _______  , _______  , _______  , _______  , _______  , _______  ,                                  _______  , _______  , _______  , _______  ,LCTL(KC_LEFT),LCTL(KC_RGHT),
    _______  , CPI_I100 , CPI_I1K  , SCRL_DVI , _______  , _______  ,                                  _______  , KC_BTN1  , KC_BTN3  , KC_BTN2  , _______  , _______  ,
-   _______  , CPI_D100 , CPI_D1K  , SCRL_DVD , _______  , _______  , KBC_SAVE ,            _______  , _______  , _______  , _______  , _______  , _______  , _______  ,
+   _______  , CPI_D100 , CPI_D1K  , SCRL_DVD , _______  , _______  , KBC_SAVE ,            _______  , _______  , KC_BTN1  , KC_BTN3  , KC_BTN2  , _______  , _______  ,
    _______  , _______  , _______  , _______  , _______  , _______  , _______  ,            _______  , _______  , _______  , _______  , _______  , _______  , _______
  ),
 
  [4] = LAYOUT_universal(
     _______  , _______  , _______  , _______  , _______  , _______  ,                                  _______  , _______  , _______  , _______  , _______  , _______  ,
     _______  , _______  , _______  , _______  , _______  , _______  ,                                  _______  , _______  , _______  , _______  , _______  , _______  ,
-    _______  , _______  , _______  , _______  , _______  , _______  ,                                  _______  , KC_BTN1  , KC_BTN3  , KC_BTN2  , _______  , _______  ,
-    _______  , _______  , _______  , _______  , _______  , _______  , _______  ,            _______  , _______  , _______  , _______  , _______  , _______  , _______  ,
+    _______  , _______  , _______  , _______  , _______  , _______  ,                                  _______  , KC_BTN1  , KC_BTN3  , KC_BTN2   , _______  , _______  ,
+    _______  , _______  , _______  , _______  , _______  , _______  , _______  ,            _______  , _______  , KC_BTN1  , KC_BTN3  , KC_BTN2  , _______  , _______  ,
     _______  , _______  , _______  , _______  , _______  , _______  , _______  ,            _______  , _______  , _______  , _______  , _______  , _______  , _______
  ),
 };
@@ -73,7 +73,13 @@ layer_state_t layer_state_set_user(layer_state_t state) {
             // remove_auto_mouse_target must be called to adjust state *before* setting enable
             state = remove_auto_mouse_layer(state, false);
             set_auto_mouse_enable(false);
-            keyball_set_scroll_mode(true);
+            keyball_set_scroll_mode(true);j
+            break;
+        case 1:
+            // Auto enable scroll mode when the highest layer is 3
+            // remove_auto_mouse_target must be called to adjust state *before* setting enable
+            state = remove_auto_mouse_layer(state, false);
+            set_auto_mouse_enable(false);
             break;
         default:
             set_auto_mouse_enable(true);
