@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   keymap.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: takira <takira@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/14 15:34:01 by takira            #+#    #+#             */
+/*   Updated: 2023/02/17 10:36:20 by takira           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 Copyright 2022 @Yowkees
 Copyright 2022 MURAOKA Taro (aka KoRoN, @kaoriya)
@@ -74,6 +86,10 @@ layer_state_t layer_state_set_user(layer_state_t state) {
             state = remove_auto_mouse_layer(state, false);
             set_auto_mouse_enable(false);
             keyball_set_scroll_mode(true);
+            break;
+        case 2:
+            state = remove_auto_mouse_layer(state, false);
+            set_auto_mouse_enable(false);
             break;
         case 1:
             state = remove_auto_mouse_layer(state, false);
