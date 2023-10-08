@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   config.h                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: takira <takira@student.42tokyo.jp>         +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/14 15:34:01 by takira            #+#    #+#             */
-/*   Updated: 2023/02/24 10:34:48 by takira           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 /*
 Copyright 2021 @Yowkees
 Copyright 2022 MURAOKA Taro (aka KoRoN, @kaoriya)
@@ -93,8 +81,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_DEFAULT_LAYER 4
-#define AUTO_MOUSE_TIME 500
+#define AUTO_MOUSE_TIME 90
 #define AUTO_MOUSE_DELAY 5
 
 #define TAPPING_TERM 150
 
+#define TAPPING_FORCE_HOLD
