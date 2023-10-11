@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [1] = LAYOUT_universal(
     _______  , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5    ,                                  KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , KC_F11   ,
     _______  , MEH(KC_5), MEH(KC_4), MEH(KC_3), MEH(KC_2), MEH(KC_1),                                  _______  , _______  , KC_UP    , _______  , _______  , KC_F12   ,
-    _______  , _______  , _______  , KC_DEL   , _______  , _______  ,                                  KC_BSPC  , KC_LEFT  , KjjC_DOWN  , KC_RGHT  , _______  , _______  ,
+    _______  , _______  , _______  , KC_DEL   , _______  , _______  ,                                  KC_BSPC  , KC_LEFT  , KC_DOWN  , KC_RGHT  , _______  , _______  ,
     _______  , _______  , _______  , _______  , _______  , _______  , _______  ,            _______  , _______  , _______  , _______  , _______  , _______  , _______  ,
     _______  , _______  , _______  , _______  , _______  , _______  , _______  ,            _______  , _______  , _______  , _______  , _______  , KC_F14   , KC_F15
   ),
@@ -90,6 +90,15 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     }
     return state;
 }
+
+// ctrl-H -> backspace
+const key_override_t backspace_key_override = ko_make_basic(MOD_MASK_CTRL, KC_H, KC_BSPC);
+
+// This globally defines all key overrides to be used
+const key_override_t **key_overrides = (const key_override_t *[]){
+    &backspace_key_override,
+    NULL // Null terminate the array of overrides!
+};
 
 #ifdef OLED_ENABLE
 
