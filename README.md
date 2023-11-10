@@ -1,11 +1,14 @@
 # Overview
 * This repository is a clone of [Keyball by Yowkees](https://github.com/Yowkees/keyball).
-* Changed `Keyball61` content to support `Automatic Mouse Layer`.
+* Changed `Keyball39` and `Keyball61` content to support `Automatic Mouse Layer`.
 * Confirmed with `qmk 0.19.2` on  arm64.
 
 # Firmware build
 ```shell
 # cd to qmk root
+
+make keyball/keyball39:default_custom
+
 make keyball/keyball61:default_custom
 ```
 

@@ -77,5 +77,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // To squeeze firmware size
 #undef LOCKING_SUPPORT_ENABLE
 #undef LOCKING_RESYNC_ENABLE
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
+//#define NO_ACTION_MACRO
+//#define NO_ACTION_FUNCTION
+
+#define POINTING_DEVICE_AUTO_MOUSE_ENABLE
+#define AUTO_MOUSE_DEFAULT_LAYER 4
+#define AUTO_MOUSE_TIME 90
+#define AUTO_MOUSE_DELAY 5
+
+#define TAPPING_TERM 120
+
+#define TAPPING_FORCE_HOLD
