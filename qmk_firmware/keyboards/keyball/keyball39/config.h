@@ -21,11 +21,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 // USB Device descriptor parameters
-#define VENDOR_ID           0x5957      // "YW" = Yowkees
-#define PRODUCT_ID          0x0200      
-#define DEVICE_VER          0x0001
-#define MANUFACTURER        Yowkees
-#define PRODUCT             Keyball39
+//#define VENDOR_ID           0x5957      // "YW" = Yowkees
+//#define PRODUCT_ID          0x0200
+//#define DEVICE_VER          0x0001
+//#define MANUFACTURER        Yowkees
+//#define PRODUCT             Keyball39
 
 // Key matrix parameters
 #define MATRIX_ROWS         (4 * 2)  // split keyboard
@@ -40,7 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SOFT_SERIAL_PIN         D2
 #define SPLIT_HAND_MATRIX_GRID  F6, B5
 #define SPLIT_USB_DETECT
-#define SPLIT_USB_TIMEOUT       500
+#define SPLIT_USB_TIMEOUT       2000
 
 #define SPLIT_TRANSACTION_IDS_KB KEYBALL_GET_INFO, KEYBALL_GET_MOTION, KEYBALL_SET_CPI
 
@@ -88,3 +88,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 120
 
 #define TAPPING_FORCE_HOLD
+
+#define KEYBALL_CPI_DEFAULT 2400
+#define KEYBALL_SCROLL_DIV_DEFAULT 7

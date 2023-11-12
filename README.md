@@ -1,21 +1,22 @@
 # Overview
 * This repository is a clone of [Keyball by Yowkees](https://github.com/Yowkees/keyball).
-* Changed `Keyball39` and `Keyball61` content to support `Automatic Mouse Layer`.
-* Confirmed with `qmk 0.19.2` on  arm64.
+* Custom keymap of `Keyball39`. 
+* Changed `Keyball61` content to support `Automatic Mouse Layer`.
+* Confirmed with `qmk 0.19.2` on macOS arm64.
 
 # Firmware build
 ```shell
-# cd to qmk root
+# keyball39
+make -C qmk_root_dir keyball/keyball39:custom
 
-make keyball/keyball39:default_custom
-
-make keyball/keyball61:default_custom
+# keyball61
+make -C qmk_root_dir keyball/keyball61:default_custom
 ```
 
 # Reference
 * [qmk keycodes overview](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md)
 * [Keyball61ユーザーがKeyball44も作ってみた](https://wonwon-eater.com/keyball44/)
-
+* [QMKのファームウェアが破壊的なアップデートをして昔のプログラムがエラーになるので修正する方法](http://www.neko.ne.jp/~freewing/hardware/qmk_update_program_with_newest_firmware_2022/)
 
 <br><br><br>
 
