@@ -38,22 +38,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [2] = LAYOUT_universal(
     KC_ESC        , KC_7          , KC_8          , KC_9          , LCTL(KC_ESC)  ,                                           MEH(KC_5)      , MEH(KC_4)     , KC_UP         , MEH(KC_3)     , MEH(KC_1)      ,
-	KC_LCTL       , KC_4          , KC_5          , KC_6          , LCMD(KC_SLSH) ,                                           KC_BSPC        , KC_LEFT       , KC_DOWN       , KC_RGHT       , KC_LCTL        ,
+	KC_LSFT       , KC_4          , KC_5          , KC_6          , LCMD(KC_SLSH) ,                                           KC_BSPC        , KC_LEFT       , KC_DOWN       , KC_RGHT       , KC_LCTL        ,
 	KC_0          , KC_1          , KC_2          , KC_3          , KC_DEL        ,                                           KC_DEL         , LALT(KC_LCMD) , LCTL(KC_LSFT) , LCTL(KC_SPC)  , KC_LSFT        ,
 	_______       , _______       , KC_LCMD       , _______       , KC_SPC        , KC_TAB  ,              _______          , KC_LCTL        , XXXXXXX       , XXXXXXX       , XXXXXXX       , _______
   ),
 
   [3] = LAYOUT_universal(
-    KC_ESC        , KC_F7         , KC_F8         , KC_F9         , LSG(KC_4)     ,                                           KC_F14         , KC_F15        , LCTL(KC_LEFT) , LCTL(KC_RGHT) , LCTL(KC_UP)    ,
+    KC_ESC        , KC_F7         , KC_F8         , KC_F9         , LSG(KC_4)     ,                                           KC_F14         , KC_F15        , _______       , _______       , _______        ,
 	KC_LCTL       , KC_F4         , KC_F5         , KC_F6         , LSG(KC_5)     ,                                           LCMD(KC_W)     , RCS(KC_TAB)   , LCMD(KC_T)    , LCTL(KC_TAB)  , KC_LCTL        ,
 	KC_LSFT       , KC_F1         , KC_F2         , KC_F3         , _______       ,                                           LSG(KC_T)      , LCMD(KC_LEFT) , LCMD(KC_N)    , LCMD(KC_RGHT) , KC_LSFT        ,
 	_______       , _______       , _______       , _______       , KC_SPC        , _______  ,             LCMD(LCTL(KC_D)) , _______        , XXXXXXX       , XXXXXXX       , XXXXXXX       , _______
   ),
 
   [4] = LAYOUT_universal(
-	_______       , _______       , _______       , _______       , _______       ,                                           _______        , _______       , _______       , _______       , _______         ,
-	_______       , _______       , _______       , _______       , _______       ,                                           _______        , _______       , _______       , _______       , _______         ,
-	_______       , _______       , _______       , _______       , _______       ,                                           _______        , _______       , KC_BTN1       , KC_BTN2       , KC_BTN3         ,
+	_______       , _______       , _______       , _______       , _______       ,                                           _______        , _______       , _______       , _______       , _______        ,
+	_______       , _______       , _______       , _______       , _______       ,                                           _______        , _______       , _______       , _______       , _______        ,
+	_______       , _______       , _______       , _______       , _______       ,                                           _______        , _______       , KC_BTN1       , KC_BTN2       , KC_BTN3        ,
 	_______       , _______       , _______       , _______       , _______       , _______  ,             _______          , _______        , XXXXXXX       , XXXXXXX       , XXXXXXX       , _______
   ),
 
