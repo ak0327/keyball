@@ -23,9 +23,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_universal(
-    KC_Q          , KC_W          , KC_E          , KC_R          		, KC_T     ,                                          KC_Y           , KC_U         , KC_I           , KC_O         , KC_P            ,
-    KC_A          , KC_S          , KC_D          , KC_F          		, KC_G     ,                                          KC_H           , KC_J         , KC_K           , KC_L         , MT(MOD_LCTL, LSFT(KC_MINUS)),
-    KC_Z          , KC_X          , KC_C          , KC_V          		, KC_B     ,                                          KC_N           , KC_M         , KC_BTN1        , KC_BTN2      , RSFT_T(KC_BTN3) ,
+    KC_Q          , KC_W          , KC_E          , KC_R                , KC_T     ,                                          KC_Y           , KC_U         , KC_I           , KC_O         , KC_P                        ,
+    KC_A          , KC_S          , KC_D          , KC_F                , KC_G     ,                                          KC_H           , KC_J         , KC_K           , KC_L         , MT(MOD_LCTL,LSFT(KC_MINUS)) ,
+    KC_Z          , KC_X          , KC_C          , KC_V                , KC_B     ,                                          KC_N           , KC_M         , KC_BTN1        , KC_BTN2      , MT(MOD_RSFT, KC_BTN3)         ,
     LT(2,KC_LCTL) , KC_LALT       , LT(1,XXXXXXX) , MT(MOD_LGUI,KC_LNG2), KC_SPC   , MT(MOD_LSFT,KC_LNG1),  KC_ENT          , LT(2,XXXXXXX)  , XXXXXXX      , XXXXXXX        , XXXXXXX      , LT(3,KC_LCTL)
   ),
 
@@ -33,14 +33,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LSFT(KC_1)    , LSFT(KC_2)    , LSFT(KC_3)    , LSFT(KC_4)    , LSFT(KC_5)    ,                                           LSFT(KC_6)           , LSFT(KC_7)    , LSFT(KC_8)    , LSFT(KC_BSLS) , KC_BSLS        ,
     LSFT(KC_9)    , LSFT(KC_0)    , KC_LBRC       , KC_RBRC       , KC_SLSH       ,                                           KC_MINUS             , LSFT(KC_EQL)  , KC_EQL        , LSFT(KC_SCLN) , KC_SCLN        ,
     LSFT(KC_LBRC) , LSFT(KC_RBRC) , LSFT(KC_COMM) , LSFT(KC_DOT)  , LSFT(KC_SLSH) ,                                           LSFT(KC_MINUS)       , LSFT(KC_GRV)  , KC_COMM       , KC_DOT        , KC_GRV         ,
-	LCMD(LCTL(KC_D)), KC_LALT     , KC_LCMD       , KC_LCMD       , KC_SPC        , _______ ,              KC_QUOT          , LT(2, LSFT(KC_QUOT)) , XXXXXXX       , XXXXXXX       , XXXXXXX       , _______
+	LCMD(LCTL(KC_D)), KC_LALT     , KC_LCMD       , KC_LCMD       , KC_SPC        , _______ ,              KC_QUOT          , LT(2,LSFT(KC_QUOT))  , XXXXXXX       , XXXXXXX       , XXXXXXX       , _______
   ),
 
   [2] = LAYOUT_universal(
     KC_ESC        , KC_7          , KC_8          , KC_9          , LCTL(KC_ESC)  ,                                           MEH(KC_5)      , MEH(KC_4)     , KC_UP         , MEH(KC_3)     , MEH(KC_1)      ,
 	KC_LSFT       , KC_4          , KC_5          , KC_6          , LCMD(KC_SLSH) ,                                           KC_BSPC        , KC_LEFT       , KC_DOWN       , KC_RGHT       , KC_LCTL        ,
 	KC_0          , KC_1          , KC_2          , KC_3          , KC_DEL        ,                                           KC_DEL         , LALT(KC_LCMD) , LCTL(KC_LSFT) , LCTL(KC_SPC)  , KC_LSFT        ,
-	_______       , KC_LALT       , KC_LCMD       , LT(1,KC_LNG2) , KC_SPC        , KC_TAB  ,              _______          , KC_LCTL        , XXXXXXX       , XXXXXXX       , XXXXXXX       , _______
+	_______       , KC_LALT       , KC_LCMD       , LT(0,KC_LNG2) , KC_SPC        , KC_TAB  ,              _______          , KC_LCTL        , XXXXXXX       , XXXXXXX       , XXXXXXX       , _______
   ),
 
   [3] = LAYOUT_universal(
