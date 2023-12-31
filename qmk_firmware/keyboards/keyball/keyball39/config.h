@@ -85,10 +85,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define AUTO_MOUSE_TIME 90
 #define AUTO_MOUSE_DELAY 5
 
-#define TAPPING_TERM 140
-#define PERMISIVE_HOLD
-
-#define TAPPING_FORCE_HOLD
+//#define TAPPING_TERM 200
+//#define PERMISIVE_HOLD
+//#define TAPPING_FORCE_HOLD
+#define TAPPING_TERM 0
+#define RETRO_TAPPING
 
 #define KEYBALL_CPI_DEFAULT 2400
 #define KEYBALL_SCROLL_DIV_DEFAULT 7
