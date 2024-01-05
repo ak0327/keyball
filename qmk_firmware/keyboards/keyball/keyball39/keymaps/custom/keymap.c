@@ -30,10 +30,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [1] = LAYOUT_universal(
-    LSFT(KC_1)    , LSFT(KC_2)    , LSFT(KC_3)    , LSFT(KC_4)    , LSFT(KC_5)    ,                                           LSFT(KC_6)           , LSFT(KC_7)    , LSFT(KC_8)    , LSFT(KC_BSLS) , KC_BSLS        ,
-    LSFT(KC_9)    , LSFT(KC_0)    , KC_LBRC       , KC_RBRC       , KC_SLSH       ,                                           KC_MINUS             , LSFT(KC_EQL)  , KC_EQL        , LSFT(KC_SCLN) , KC_SCLN        ,
-    LSFT(KC_LBRC) , LSFT(KC_RBRC) , LSFT(KC_COMM) , LSFT(KC_DOT)  , LSFT(KC_SLSH) ,                                           LSFT(KC_MINUS)       , LSFT(KC_GRV)  , KC_COMM       , KC_DOT        , KC_GRV         ,
-	LCMD(LCTL(KC_D)), KC_LALT     , KC_LCMD       , KC_LCMD       , KC_SPC        , _______ ,              KC_QUOT          , LT(2,LSFT(KC_QUOT))  , XXXXXXX       , XXXXXXX       , XXXXXXX       , _______
+    LSFT(KC_1)    , LSFT(KC_2)    , LSFT(KC_3)    , LSFT(KC_4)    , LSFT(KC_5)    ,                                           LSFT(KC_6)      , LSFT(KC_7)    , LSFT(KC_8)    , LSFT(KC_BSLS) , KC_BSLS        ,
+    LSFT(KC_9)    , LSFT(KC_0)    , KC_LBRC       , KC_RBRC       , KC_SLSH       ,                                           KC_MINUS        , LSFT(KC_EQL)  , KC_EQL        , LSFT(KC_SCLN) , KC_SCLN        ,
+    LSFT(KC_LBRC) , LSFT(KC_RBRC) , LSFT(KC_COMM) , LSFT(KC_DOT)  , LSFT(KC_SLSH) ,                                           LSFT(KC_MINUS)  , LSFT(KC_GRV)  , KC_COMM       , KC_DOT        , KC_GRV         ,
+	LCMD(LCTL(KC_D)), KC_LALT     , KC_LCMD       , KC_LCMD       , KC_SPC        , _______ ,              KC_QUOT          , LT(2,XXXXXXX)   , XXXXXXX       , XXXXXXX       , XXXXXXX       , LSFT(KC_QUOT)
   ),
 
   [2] = LAYOUT_universal(
