@@ -23,9 +23,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_universal(
-    KC_Q          , KC_W          , KC_E          , KC_R                , KC_T     ,                                          KC_Y           , KC_U         , KC_I           , KC_O         , KC_P                        ,
-    KC_A          , KC_S          , KC_D          , KC_F                , KC_G     ,                                          KC_H           , KC_J         , KC_K           , KC_L         , MT(MOD_LCTL,LSFT(KC_MINUS)) ,
-    KC_Z          , KC_X          , KC_C          , KC_V                , KC_B     ,                                          KC_N           , KC_M         , KC_BTN1        , KC_BTN2      , MT(MOD_RSFT, KC_BTN3)         ,
+    KC_Q          , KC_W          , KC_E          , KC_R                , KC_T     ,                                          KC_Y           , KC_U         , KC_I           , KC_O         , KC_P                  ,
+    KC_A          , KC_S          , KC_D          , KC_F                , KC_G     ,                                          KC_H           , KC_J         , KC_K           , KC_L         , KC_LCTL               ,
+    KC_Z          , KC_X          , KC_C          , KC_V                , KC_B     ,                                          KC_N           , KC_M         , KC_BTN1        , KC_BTN2      , MT(MOD_RSFT, KC_BTN3) ,
     LT(2,KC_LCTL) , KC_LALT       , LT(1,XXXXXXX) , MT(MOD_LGUI,KC_LNG2), KC_SPC   , MT(MOD_LSFT,KC_LNG1),  KC_ENT          , LT(2,XXXXXXX)  , XXXXXXX      , XXXXXXX        , XXXXXXX      , LT(3,KC_LCTL)
   ),
 
