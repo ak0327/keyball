@@ -1,7 +1,7 @@
 # Overview
 * This repository is a clone of [Keyball by Yowkees](https://github.com/Yowkees/keyball).
-* Custom keymap of `Keyball39`. 
-* Changed `Keyball61` content to support `Automatic Mouse Layer`.
+* Custom keymap of `Keyball39`: [keyball39:custom](./qmk_firmware/keyboards/keyball/keyball39/keymaps/custom/keymap.c). 
+* Changed `Keyball61` content to support `Automatic Mouse Layer`: [keyball61:default_custom](./qmk_firmware/keyboards/keyball/keyball61/keymaps/default_custom/keymap.c).
 * Confirmed with `qmk 0.19.2` on macOS arm64.
 
 # Firmware build
