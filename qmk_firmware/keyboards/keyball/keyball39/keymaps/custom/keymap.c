@@ -24,6 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define num_ 1
 #define sym_ 2
 #define func_ 3
+#define mouse_ 4
 
 #define LNG_KANA    KC_LNG1
 #define LNG_ENG     KC_LNG2
@@ -78,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //+---------------+---------------+---------------+---------------+---------------+---------------+          +---------------+---------------+---------------+---------------+---------------+---------------+
   ),
 
-  [4] = LAYOUT_universal(
+  [mouse_] = LAYOUT_universal(
 	_______       , _______       , _______       , _______       , _______       ,                                             _______        , _______       , _______       , _______       , _______        ,
 	_______       , _______       , _______       , _______       , _______       ,                                             _______        , _______       , _______       , _______       , _______        ,
 	_______       , _______       , _______       , _______       , _______       ,                                             _______        , _______       , KC_BTN1       , KC_BTN2       , KC_BTN3        ,
@@ -92,18 +93,18 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 	// Auto enable scroll mode when the highest layer is 3
 //    keyball_set_scroll_mode(get_highest_layer(state) == 3);
 	switch(get_highest_layer(remove_auto_mouse_layer(state, true))) {
-		case 3:
+		case func_:
 			// Auto enable scroll mode when the highest layer is 3
 			// remove_auto_mouse_target must be called to adjust state *before* setting enable
 			state = remove_auto_mouse_layer(state, false);
 			set_auto_mouse_enable(false);
 			keyball_set_scroll_mode(true);
 			break;
-		case 2:
+		case sym_:
 			state = remove_auto_mouse_layer(state, false);
 			set_auto_mouse_enable(false);
 			break;
-		case 1:
+		case num_:
 			state = remove_auto_mouse_layer(state, false);
 			set_auto_mouse_enable(false);
 			break;
