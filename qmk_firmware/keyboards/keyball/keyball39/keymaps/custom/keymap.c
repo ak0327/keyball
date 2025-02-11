@@ -125,6 +125,26 @@ const key_override_t **key_overrides = (const key_override_t *[]){
 		NULL // Null terminate the array of overrides!
 };
 
+// tapping term per key
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+    const int MOUSE_SCROLLING_TT = 0;
+    const int MOUSE_BTN3_TT = 150;
+    const int LNG_SWITCH_TT = 175;
+
+    switch (keycode) {
+        case LT(func_,KC_LCTL):  // Mouse scrolling switches immediately
+            return MOUSE_SCROLLING_TT;
+        case MT(MOD_RSFT, KC_BTN3):
+            return MOUSE_BTN3_TT;
+        case MT(MOD_LGUI,LNG_ENG):
+            return LNG_SWITCH_TT;
+        case MT(MOD_LGUI,LNG_KANA):
+            return LNG_SWITCH_TT;
+        default:
+            return TAPPING_TERM;
+    }
+}
+
 #ifdef OLED_ENABLE
 
 #    include "lib/oledkit/oledkit.h"

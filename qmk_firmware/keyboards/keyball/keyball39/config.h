@@ -88,8 +88,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define TAPPING_TERM 200
 //#define PERMISIVE_HOLD
 //#define TAPPING_FORCE_HOLD
-#define TAPPING_TERM 0
-#define RETRO_TAPPING
+#define TAPPING_TERM 100
+#define TAPPING_TERM_PER_KEY
+// #define RETRO_TAPPING
 
 #define KEYBALL_CPI_DEFAULT 2400
 #define KEYBALL_SCROLL_DIV_DEFAULT 7
