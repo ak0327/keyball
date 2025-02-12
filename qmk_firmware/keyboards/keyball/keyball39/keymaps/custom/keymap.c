@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //+---------------+---------------+---------------+---------------+---------------+                                           +---------------+---------------+---------------+---------------+---------------+
     KC_0          , KC_1          , KC_2          , KC_3          , KC_DOT        ,                                            KC_UNDS       , KC_TILD       , KC_COMM      , KC_DOT         , KC_GRV        ,
 //+---------------+---------------+---------------+---------------+---------------+---------------+          +---------------+---------------+---------------+---------------+---------------+---------------+
-    LT(func_,KC_LSFT), _______    , KC_LALT       , KC_LCMD       , KC_SPC        , LT(num_,XXXXXXX),          KC_ENT        , LT(sym_,KC_ESC), XXXXXXX      , XXXXXXX       , XXXXXXX       , KC_DQUO
+    KC_LSFT       , _______       , KC_LALT       , KC_LCMD       , KC_SPC        , LT(num_,XXXXXXX),          KC_ENT        , LT(sym_,KC_ESC), XXXXXXX      , XXXXXXX       , XXXXXXX       , KC_DQUO
 //+---------------+---------------+---------------+---------------+---------------+---------------+          +---------------+---------------+---------------+---------------+---------------+---------------+
   ),
 
@@ -63,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //+---------------+---------------+---------------+---------------+---------------+                                          +---------------+---------------+---------------+---------------+---------------+
     KC_LCBR       , KC_RCBR       , KC_LABK       , KC_RABK       , KC_QUES       ,                                            KC_DEL        , LALT(KC_LCMD) , LCTL(KC_LSFT) , LCTL(KC_SPC)  , KC_LSFT       ,
 //+---------------+---------------+---------------+---------------+---------------+---------------+          +---------------+---------------+---------------+---------------+---------------+---------------+
-    LT(func_,KC_LSFT), _______    , KC_LALT       , KC_LCMD       , KC_SPC        , XXXXXXX       ,            KC_ENT        , KC_ESC        , XXXXXXX       , XXXXXXX       , XXXXXXX       , _______
+    KC_LSFT       , _______       , KC_LALT       , KC_LCMD       , KC_SPC        , XXXXXXX       ,            KC_ENT        , KC_ESC        , XXXXXXX       , XXXXXXX       , XXXXXXX       , _______
 //+---------------+---------------+---------------+---------------+---------------+---------------+          +---------------+---------------+---------------+---------------+---------------+---------------+
   ),
 
@@ -128,8 +128,8 @@ const key_override_t **key_overrides = (const key_override_t *[]){
 // tapping term per key
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     const int MOUSE_SCROLLING_TT = 0;
-    const int MOUSE_BTN3_TT = 150;
-    const int LNG_SWITCH_TT = 175;
+    const int MOUSE_BTN3_TT = 175;
+    const int LNG_SWITCH_TT = 300;
 
     switch (keycode) {
         case LT(func_,KC_LCTL):  // Mouse scrolling switches immediately
